@@ -1,0 +1,191 @@
+/* SIDEBAR CONTAINER */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: #1e1e2f;
+  color: #6bca68;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+/* TOP SECTION */
+.top-section {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.sidebar.collapsed .hamburger {
+  color: #6ac967; 
+  font-size: 24px; 
+  transform: rotate(180deg); 
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* SIDEBAR LINKS */
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.sidebar-links li {
+  padding: 0;
+}
+
+.sidebar-links li a,
+.dropdown-header {
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.sidebar-links li a.active {
+  background-color: #333356;
+  border-radius: 8px;
+}
+
+.sidebar-links li a:hover,
+.dropdown-header:hover {
+  background-color: #2e2e4d;
+  border-radius: 8px;
+}
+
+/* ICONS */
+.icon {
+  font-size: 18px;
+}
+
+/* LOGOUT SECTION */
+.logout-section {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-btn .icon {
+  font-size: 1.5rem;
+}
+
+/* DROPDOWN HEADER */
+.dropdown-header {
+  cursor: pointer;
+}
+
+/* CARET */
+.dropdown-caret {
+  margin-left: auto;
+}
+
+/* DROPDOWN ITEMS */
+.dropdown-items {
+  list-style: none;
+  padding-left: 30px;
+  background-color: #2a2a40;
+}
+
+.dropdown-items li {
+  padding: 10px 0;
+}
+
+.dropdown-items li a {
+  font-size: 0.95rem;
+  color: #6ac967;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.dropdown-items li a:hover {
+  color: white;
+}
+
+
+/* css just for the view of the icons*/
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #2e2e4d;
+  transform: scale(1.05);
+  border-radius: 8px;
+}
+
+/* ICON STYLING */
+.menu-item .icon {
+  font-size: 20px;
+  color: #ffffff; /* You can adjust the color */
+}
+
+/* TEXT VISIBILITY */
+.menu-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* SIDEBAR COLLAPSE EFFECT */
+.sidebar.collapsed .menu-item span {
+  display: none;
+}
+
+
+
+

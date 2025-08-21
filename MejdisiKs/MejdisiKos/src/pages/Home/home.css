@@ -1,0 +1,127 @@
+.home-wrapper {
+  background: linear-gradient(to right, #f0f4ff, #d2f0e4);
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 60px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background-color: transparent;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #2e7d5f;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-hero {
+  padding: 12px 24px;
+  border-radius: 25px;
+  background-color: #2e7d5f;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-hero.secondary {
+  background-color: #ffffff;
+  color: #2e7d5f;
+  border: 2px solid #2e7d5f;
+}
+
+.btn-hero:hover {
+  background-color: #1d5942;
+  color: white;
+}
+
+/* Info Cards */
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px 20px;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.info-card h2 {
+  color: #2e7d5f;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.card-link {
+  color: #2e7d5f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* Highlight Section */
+.highlight {
+  background-color: rgba(255,255,255,0.8);
+  margin: 60px auto;
+  max-width: 600px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.highlight h2 {
+  color: #2e7d5f;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.highlight p {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.btn-highlight {
+  background-color: #2e7d5f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-highlight:hover {
+  background-color: #1c4e3b;
+}

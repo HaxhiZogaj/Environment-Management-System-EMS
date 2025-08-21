@@ -1,0 +1,171 @@
+.navbar {
+  background-color: #218c74;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-logo {
+  flex: 1; /* Pushes everything else to the right */
+}
+
+.navbar-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #d1fae5;
+}
+
+.navbar-auth a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.navbar-auth a:hover {
+  text-decoration: underline;
+}
+
+.navbar-search {
+  flex: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+
+.navbar-search input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.5); 
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: #fff; 
+  transition: all 0.3s ease-in-out;
+}
+
+ /* SEARCH RESULTS SCROLLING */
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(235, 240, 222, 0.95);
+  border-radius: 10px;
+  padding: 5px;
+  max-height: 250px; 
+  overflow-y: auto;
+  scrollbar-width: thin; 
+  scrollbar-color: #727272 transparent;
+  z-index: 1000;
+}
+
+.search-results::-webkit-scrollbar {
+  width: 8px;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 6px;
+}
+
+.search-results::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* SEARCH RESULTS LIST */
+.search-results li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  transition: background 0.2s ease-in-out;
+}
+
+.search-results li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+}
+
+
+.navbar-auth {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.auth-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background-color: #bbae39;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #6ac967;
+}
+
+.register-btn {
+  background-color: #bbae39;
+  color: white;
+}
+
+.register-btn:hover {
+  background-color: #6ac967;
+}
+
+
+.clear-button {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.clear-button:hover {
+  color: #d1fae5;
+}
+
+
+

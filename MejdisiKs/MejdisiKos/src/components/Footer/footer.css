@@ -1,0 +1,24 @@
+/* src/components/Footer/Footer.css */
+.footer {
+  background-color: #2f4858;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 60px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #b2f5ea;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

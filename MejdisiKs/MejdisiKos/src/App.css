@@ -1,0 +1,67 @@
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css";
+
+
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #f0f4ff, #218c74); /* full stretched background */
+  overflow: hidden;
+}
+
+/* === Main Content === */
+.main-content {
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+  margin-left: 240px; /* when sidebar is open */
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0; /* remove internal space - optional */
+}
+
+/* When sidebar is collapsed */
+.main-content.sidebar-collapsed {
+  margin-left: 70px;
+}
+
+/* === Grid Row Colors === */
+/* Even rows - white */
+.e-grid .e-row:nth-child(even) {
+  background-color: white;
+}
+
+/* Odd rows - light green */
+.e-grid .e-row:nth-child(odd) {
+  background-color: #e8f1eb;
+}
+

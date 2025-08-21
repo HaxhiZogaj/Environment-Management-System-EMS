@@ -1,0 +1,6 @@
+@MejdisiIm_HostAddress = http://localhost:5188
+
+GET {{MejdisiIm_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
